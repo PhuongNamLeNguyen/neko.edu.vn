@@ -1,0 +1,16 @@
+:root {
+    --main-color: #f76e34;
+
+    --white-color: #fff;
+    --black-color: #333;
+    --brown-color: #7a6960;
+
+    --btn-background-color-hover: #fc7d47ee;
+
+    --background-orange-color: #fef8f5;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
