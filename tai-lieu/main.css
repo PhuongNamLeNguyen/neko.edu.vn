@@ -10,7 +10,7 @@
 
 .document__previous-link .right-icon {
     min-width: 10px;
-    padding: 0 3px 0 1px;
+    padding: 0 1px 0 3px;
 }
 
 #document {
@@ -53,17 +53,30 @@
     padding: 10px 0;
 }
 
-.document__category-title {
+.document__category-title,
+.book-list__title {
     font-size: 1.6rem;
 }
 
 .document__category-item {
     margin: 10px 0;
-    font-size: 1.4rem;
+}
+
+.document__category-list a {
+    transition: .15s linear;
+}
+
+.document__category-list a:hover {
+    color: var(--main-color);
+    transition: .15s linear;
 }
 
 .document__category-item-list {
     margin-left: 15px;
+}
+
+.document__category-item-details {
+    padding: 3px 0;
 }
 
 .book-list {
@@ -72,21 +85,51 @@
 
 .book-list__title {
     text-align: center;
+    padding-bottom: 5px;
+}
+
+.book-list__title:not(first-child) {
+    margin-top: 15px;
 }
 
 .book-list__item {
-    width: 90%;
-    height: 150px;
+    width: 80%;
+    height: 160px;
     background-color: orchid;
-    margin: 5% 5%;
+    margin: 2% auto;
+    transition: .15s linear;
+    border-radius: 25px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 20%);
+}
+
+.book-list__item:hover {
+    opacity: 0.85;
+    transition: .15s linear;
 }
 
 .book-list__item-title {
     margin-left: 5px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 55px;
     font-size: 3rem;
     color: var(--white-color);
+}
+
+/* Background Books CSS */
+.book-list__item.jlpt-n1 {
+    background: linear-gradient(-45deg, #EB3349, #F45C43);
+}
+
+.book-list__item.jlpt-n2 {
+    background: linear-gradient(-45deg, #fd746c, #ff9068);
+}
+
+.book-list__item.jlpt-n3 {
+    background: linear-gradient(45deg, #2980b9, #2c3e50);
+}
+
+.book-list__item.jlpt-n4-5 {
+    background: linear-gradient(-45deg, #808080, #3fada8);
 }
 
 @media (min-width: 1024px) {
