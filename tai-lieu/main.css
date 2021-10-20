@@ -1,0 +1,106 @@
+.document__previous-link {
+    margin: 10px 10px;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.document__previous-link .home-icon {
+    color: var(--main-color);
+}
+
+.document__previous-link .right-icon {
+    min-width: 10px;
+    padding: 0 3px 0 1px;
+}
+
+#document {
+    padding: 10px;
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+}
+
+.document__admin {
+    font-size: 1.3rem;
+    color: var(--bright-brown-color);
+}
+
+.document__admin-account {
+    padding: 0 5px;
+}
+
+.document__header {
+    margin: 15px 0;
+}
+
+.document__header-title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.document__header-desc {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.row {
+    margin: 0;
+}
+
+.document__category,
+.book-list {
+    padding: 10px 0;
+}
+
+.document__category-title {
+    font-size: 1.6rem;
+}
+
+.document__category-item {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.document__category-item-list {
+    margin-left: 15px;
+}
+
+.book-list {
+    width: 100%;
+}
+
+.book-list__title {
+    text-align: center;
+}
+
+.book-list__item {
+    width: 90%;
+    height: 150px;
+    background-color: orchid;
+    margin: 5% 5%;
+}
+
+.book-list__item-title {
+    margin-left: 5px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+@media (min-width: 1024px) {
+    .document__wrap {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 740px) {
+    .document__header-title {
+        font-size: 1.8rem;
+    }
+
+    .document__header-desc {
+        font-size: 1.3rem;
+    }
+}

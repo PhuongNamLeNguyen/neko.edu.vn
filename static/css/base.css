@@ -130,6 +130,7 @@ header {
 .side-navbar__logo {
     color: var(--main-color);
     font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .side-navbar__list {
