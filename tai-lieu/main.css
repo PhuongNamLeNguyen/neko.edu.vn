@@ -1,4 +1,6 @@
 .document__previous-link {
+    display: flex;
+    align-items: center;
     margin: 10px 10px;
     align-items: center;
     font-size: 1.4rem;
@@ -10,7 +12,8 @@
 
 .document__previous-link .right-icon {
     min-width: 10px;
-    padding: 0 1px 0 3px;
+    padding: 0 3px 0 5px;
+    font-size: 1.8rem;
 }
 
 #document {
@@ -30,7 +33,7 @@
 }
 
 .document__header {
-    margin: 15px 0;
+    margin: 20px 0 0;
 }
 
 .document__header-title {
@@ -39,7 +42,7 @@
 }
 
 .document__header-desc {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     text-align: justify;
 }
@@ -53,9 +56,14 @@
     padding: 10px 0;
 }
 
+.document__category {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
 .document__category-title,
 .book-list__title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .document__category-item {
